@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="overlaySurface" format="boolean" />
+    <attr name="top_left_corner_radius" format="dimension" />
+    <attr name="bottom_left_corner_radius" format="dimension" />
+    <attr name="bottom_right_corner_radius" format="dimension" />
+    <attr name="top_right_corner_radius" format="dimension" />
+
+  <!--  <attr name="mrb_tickColor" format="reference" />
+    <attr name="mrb_selectorSize" format="dimension" />
+    <attr name="mrb_selectorColor" format="reference" />
+    <attr name="mrb_selectorBoundaryColor" format="reference|color" />-->
+
+    <!--<attr name="mrb_selectorBoundaryColor" format="reference" />
+    <attr name="mrb_selectorBoundaryColor" format="reference" />
+    <attr name="mrb_selectorBoundaryColor" format="reference" />-->
+
+</resources>

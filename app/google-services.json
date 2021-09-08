@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "511727740451",
+    "project_id": "swagse-1610522875525",
+    "storage_bucket": "swagse-1610522875525.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511727740451:android:cee91864e6a913590cb396",
+        "android_client_info": {
+          "package_name": "com.app.swagse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511727740451-nokejeoh6qj03u0f1tdqjuusak44ub2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.swagse",
+            "certificate_hash": "81bed923aa0b1d7b0569c1c4de30b3822efe917c"
+          }
+        },
+        {
+          "client_id": "511727740451-crhk7sp2eshqkus6mf69q8g1ql1tts7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlij9LKTVozV0O4iurN5NYtAIt_A5ujFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511727740451-crhk7sp2eshqkus6mf69q8g1ql1tts7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

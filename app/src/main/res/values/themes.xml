@@ -1,0 +1,522 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SwagSe" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/logo_main_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/logo_main_color</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/logo_main_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/logo_main_color</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.SwagSe.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="button_style">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/button_round_shape</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tablayoutText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">Roboto</item>
+    </style>
+
+    <style name="RoundedImageViewShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!--Style Material Dialog Bottom Sheet-->
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="Progressbar_style" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/cyan</item>
+    </style>
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:progressBackgroundTint" tools:ignore="NewApi">@color/white</item>
+
+    </style>
+
+    <style name="MySeekBar2" parent="Widget.AppCompat.SeekBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:progressBackgroundTint" tools:ignore="NewApi">@color/black</item>
+
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+    </style>
+
+    <!-- To customize video editor according to your app style you should
+     create your own theme inherited from VideoCreationTheme and apply it
+     to VideoCreationActivity in AndroidManifest.xml file -->
+    <style name="CustomIntegrationAppTheme" parent="VideoCreationTheme">
+
+        <!-- Camera screen styles -->
+        <item name="cameraOverlayStyle">@style/CustomCameraOverlayStyle</item>
+        <item name="cameraActionButtonStyle">@style/CustomCameraActionButtonStyle</item>
+        <item name="cameraMusicTopIconStyle">@style/CustomCameraMusicTopIconStyle</item>
+        <item name="cameraBackButtonStyle">@style/CustomCameraBackButtonStyle</item>
+        <item name="cameraNextButtonStyle">@style/CustomCameraNextButtonStyle</item>
+        <item name="cameraRemoveLastPieceButtonStyle">@style/CustomCameraRemoveLastPieceButtonStyle
+        </item>
+        <item name="cameraRecorderTimelineStyle">@style/CustomCameraTimelineRecorderStyle</item>
+        <item name="cameraEffectsLabelStyle">@style/CustomCameraEffectLabelStyle</item>
+        <item name="cameraEffectsItemStyle">@style/CustomCameraEffectsItemStyle</item>
+        <item name="cameraEffectsRecyclerStyle">@style/CustomCameraEffectsRecyclerStyle</item>
+        <item name="cameraSpeedPickerLabelStyle">@style/CustomCameraSpeedPickerLabelStyle</item>
+        <item name="cameraSpeedPickerViewStyle">@style/CustomCameraSpeedPickerViewStyle</item>
+        <item name="cameraSpeedPickerItemStyle">@style/CustomCameraSpeedPickerItemStyle</item>
+        <item name="actionableEffectTitleStyle">@style/CustomActionableEffectTitleStyle</item>
+        <item name="checkableEffectTitleStyle">@style/CustomCheckableEffectTitleStyle</item>
+
+        <!-- Wait dialog style -->
+        <item name="throbberViewStyle">@style/CustomThrobberViewStyle</item>
+        <item name="waitDialogTextStyle">@style/CustomWaitDialogTextStyle</item>
+
+        <!-- Following attributes define custom alert dialog icons
+             that may be placed here if you want to apply images
+             to alert dialogs shown in the video editor
+             ("@null" means that there are no icons on alert dialogs -> it is default setup,
+             so if you do not want to add icons just not override these attributes) -->
+        <item name="alert_camera_delete_video">@null</item>
+        <item name="alert_camera_save">@null</item>
+        <item name="alert_camera_reset_all">@null</item>
+        <item name="alert_editor_delete_voice_record">@null</item>
+        <item name="alert_editor_reset_all">@null</item>
+        <item name="alert_editor_reset_effects">@null</item>
+        <item name="alert_draft_remove_icon_res">@null</item>
+        <item name="alert_draft_update_icon_res">@null</item>
+        <item name="alert_draft_restore_icon_res">@null</item>
+        <item name="alert_draft_save_icon_res">@null</item>
+
+        <!--Picture in picture style-->
+        <item name="pipParentStyle">@style/CustomPipParentStyle</item>
+        <item name="pipTitleStyle">@style/CustomPipTitleStyle</item>
+        <item name="pipActionRecyclerStyle">@style/CustomPipActionRecyclerStyle</item>
+        <item name="pipActionItemStyle">@style/CustomPipActionItemStyle</item>
+        <item name="pipLayoutRecyclerStyle">@style/CustomPipLayoutRecyclerStyle</item>
+        <item name="pipLayoutItemParentStyle">@style/CustomPipLayoutItemParentStyle</item>
+        <item name="pipLayoutItemImageStyle">@style/CustomPipLayoutItemImageStyle</item>
+        <item name="pipLayoutItemTextStyle">@style/CustomPipLayoutItemTextStyle</item>
+
+        <!--Editor-->
+        <item name="editorOverlayStyle">@style/CustomEditorOverlayStyle</item>
+        <item name="editorActionsStyle">@style/CustomEditorActionsStyle</item>
+        <item name="editorActionButtonStyle">@style/CustomEditorActionButtonStyle</item>
+        <item name="editorBackButtonStyle">@style/CustomEditorBackButtonStyle</item>
+        <item name="editorNextButtonStyle">@style/CustomEditorNextButtonStyle</item>
+        <item name="editorTextActionsStyle">@style/CustomEditorTextActionsStyle</item>
+        <item name="editorTextColorLabelStyle">@style/CustomEditorTextColorLabelStyle</item>
+        <item name="editorTextColorBackground">@null</item>
+        <item name="editorTextEditorInputStyle">@style/CustomEditorTextEditorInputStyle</item>
+        <item name="editorTypefaceSwitcherStyle">@style/CustomTypefaceSwitcherStyle</item>
+        <item name="editorTextDoneStyle">@style/CustomEditorTextDoneStyle</item>
+        <item name="editorBoardStyle">@style/CustomEditorBoardStyle</item>
+        <item name="editorUndoButtonStyle">@style/CustomEditorUndoButtonStyle</item>
+        <item name="editorVisualAndTimeEffectsRecyclerStyle">
+            @style/CustomEditorVisualAndTimeEffectsRecyclerStyle
+        </item>
+        <item name="editorApplyEffectHintStyle">@style/CustomEditorApplyEffectHintStyle</item>
+        <item name="editorEffectVisualStyle">@style/CustomEditorEffectVisualStyle</item>
+        <item name="editorEffectTimeStyle">@style/CustomEditorEffectTimeStyle</item>
+        <item name="editorEffectMaskStyle">@style/CustomEditorEffectMaskStyle</item>
+        <item name="editorEffectLutItemStyle">@style/CustomEditorEffectLutItemStyle</item>
+        <item name="editorColorEffectsLabelStyle">@style/CustomEditorColorEffectsLabelStyle</item>
+        <item name="editorColorEffectsRecyclerStyle">@style/CustomEditorColorEffectsRecyclerStyle
+        </item>
+        <item name="editorTimelineStyle">@style/CustomTimelineEditorViewStyle</item>
+        <item name="editorPlaybackControllerParentStyle">
+            @style/CustomEditorPlaybackControllerParentStyle
+        </item>
+        <item name="editorPlaybackControllerCancelStyle">
+            @style/CustomEditorPlaybackControllerCancelStyle
+        </item>
+        <item name="editorPlaybackControllerPlayStyle">
+            @style/CustomEditorPlaybackControllerPlayStyle
+        </item>
+        <item name="editorPlaybackControllerDoneStyle">
+            @style/CustomEditorPlaybackControllerDoneStyle
+        </item>
+        <item name="editorTextColorItemBackground">@drawable/bg_checkable_color</item>
+
+        <!--Gallery-->
+        <item name="galleryImageViewStyle">@style/CustomGalleryImageViewStyle</item>
+        <item name="galleryTitleTextStyle">@style/CustomGalleryTitleTextStyle</item>
+        <item name="galleryBackButtonStyle">@style/CustomGalleryBackButtonStyle</item>
+        <item name="galleryNextParentStyle">@style/CustomGalleryNextParentStyle</item>
+        <item name="galleryNextButtonStyle">@style/CustomGalleryNextButtonStyle</item>
+        <item name="gallerySelectionDescriptionStyle">@style/CustomGallerySelectionDescriptionStyle
+        </item>
+        <item name="galleryDraftsButtonStyle">@style/CustomGalleryDraftsButtonStyle</item>
+        <item name="galleryItemRadioButtonStyle">@style/CustomGalleryItemRadioButtonStyle</item>
+        <item name="galleryItemTextStyle">@style/CustomGalleryItemTextStyle</item>
+        <item name="galleryEmptyTextStyle">@style/CustomGalleryEmptyTextStyle</item>
+        <item name="galleryAlbumBlurViewStyle">@style/CustomGalleryAlbumBlurViewStyle</item>
+        <item name="galleryAlbumTitleTextStyle">@style/CustomGalleryAlbumTitleTextStyle</item>
+        <item name="galleryAlbumDescTextStyle">@style/CustomGalleryAlbumDescTextStyle</item>
+        <item name="galleryTabLayoutStyle">@style/CustomGalleryTabLayoutStyle</item>
+        <item name="galleryTabTextColors">@color/gallery_tab_color_state_list</item>
+
+        <item name="galleryColumnsNumber">wrap_content</item>
+        <item name="gallery_bg_color">@color/black</item>
+        <item name="gallery_item_corner_radius">4dp</item>
+        <item name="gallery_item_margin">2dp</item>
+        <item name="gallery_album_divider_color">@color/catskill_white</item>
+        <!---->
+
+
+        <!--Video Trimmer-->
+        <item name="trimmerStyle">@style/CustomTrimmerViewStyle</item>
+        <item name="trimmerBackButtonStyle">@style/CustomTrimmerBackButtonStyle</item>
+        <item name="trimmerNextButtonStyle">@style/CustomTrimmerNextButtonStyle</item>
+        <item name="trimmerDurationSumTextStyle">@style/CustomTrimmerDurationSumTextStyle</item>
+        <item name="trimmerContentViewStyle">@style/CustomTrimmerContentViewStyle</item>
+        <item name="trimmerContentLabelStyle">@style/CustomTrimmerContentLabelStyle</item>
+        <item name="trimmerRecyclerStyle">@style/CustomTrimmerRecyclerStyle</item>
+        <item name="trimmerThumbImageStyle">@style/CustomTrimmerThumbImageStyle</item>
+        <item name="trimmerThumbTextStyle">@style/CustomTrimmerThumbTextStyle</item>
+        <item name="trimmerDeleteLabelStyle">@style/CustomTrimmerDeleteLabelStyle</item>
+        <item name="trimmerDeleteCrossStyle">@style/CustomTrimmerDeleteCrossStyle</item>
+        <item name="trimmerCancelButtonStyle">@style/CustomTrimmerCancelButtonStyle</item>
+        <item name="trimmerDurationTimelineStyle">@style/CustomTrimmerDurationTimelineStyle</item>
+        <item name="trimmerContentHintStyle">@style/CustomTrimmerContentHintStyle</item>
+        <item name="trimmerRotateButtonStyle">@style/CustomTrimmerRotateButton</item>
+        <item name="trimmerThumbHintIconStyle">@style/CustomTrimmerThumbHintIconStyle</item>
+
+        <item name="trimmer_play_control_visible">true</item>
+        <item name="trimmer_icon_play">@drawable/ic_play</item>
+        <item name="trimmer_icon_pause">@drawable/ic_pause</item>
+        <item name="trimmer_icon_add_video">@drawable/ic_trimmer_add_video</item>
+        <item name="trimmer_bg_color_add_video">@color/transparent</item>
+        <item name="trimmer_time_visible">true</item>
+        <!---->
+
+        <!--Music Editor-->
+        <item name="musicEditorPlaybackControllerParentStyle">
+            @style/CustomMusicEditorPlaybackControllerParentStyle
+        </item>
+        <item name="musicEditorTimelineStyle">@style/CustomMusicEditorTimelineStyle</item>
+        <item name="musicEditorTimelineTimeTextStyle">
+            @style/CustomMusicEditorTimelineTimeTextStyle
+        </item>
+        <item name="musicEditorActionButtonParentStyle">
+            @style/CustomMusicEditorActionButtonParentStyle
+        </item>
+        <item name="musicEditorActionButtonStyle">@style/CustomMusicEditorActionButtonStyle</item>
+        <item name="musicEditorActionButtonTextStyle">
+            @style/CustomMusicEditorActionButtonTextStyle
+        </item>
+        <item name="timelineEditorBoardStyle">@style/CustomTimelineEditorBoardStyle</item>
+        <item name="musicEditorTimelineSoundWaveStyle">
+            @style/CustomMusicEditorTimelineSoundWaveStyle
+        </item>
+
+        <item name="musicEditorVoiceRecordingControllerParentStyle">
+            @style/CustomVoiceRecordingControllerParentStyle
+        </item>
+        <item name="musicEditorVoiceRecordingControllerCancelStyle">
+            @style/CustomVoiceRecordingControllerCancelStyle
+        </item>
+        <item name="musicEditorVoiceRecordingControllerResetStyle">
+            @style/CustomMusicEditorVoiceRecordingControllerResetStyle
+        </item>
+        <item name="musicEditorVoiceRecordingControllerDoneStyle">
+            @style/CustomVoiceRecordingControllerDoneStyle
+        </item>
+
+        <item name="musicEditorVideoVolumeContainerStyle">
+            @style/CustomMusicEditorVideoVolumeContainerStyle
+        </item>
+        <item name="musicEditorVideoVolumeTitleStyle">
+            @style/CustomMusicEditorVideoVolumeTitleStyle
+        </item>
+        <item name="musicEditorVideoVolumeValueStyle">
+            @style/CustomMusicEditorVideoVolumeValueStyle
+        </item>
+        <item name="musicEditorVideoVolumeProgressBarStyle">
+            @style/CustomMusicEditorVideoVolumeProgressBarStyle
+        </item>
+
+        <item name="musicEditorRecordingButtonStyle">
+            @style/CustomMusicEditorRecordingButtonStyle
+        </item>
+
+        <item name="musicEditorTrimViewStyle">@style/CustomMusicEditorTrimViewStyle</item>
+        <item name="musicEditorTrimmerStyle">@style/CustomMusicEditorTrimmerStyle</item>
+        <item name="musicEditorTrimmerSoundWaveStyle">
+            @style/CustomMusicEditorTrimmerSoundWaveStyle
+        </item>
+
+        <item name="musicEditorEqualizerRecyclerStyle">
+            @style/CustomMusicEditorEqualizerRecyclerStyle
+        </item>
+        <item name="musicEditorEqualizerItemStyle">@style/CustomMusicEditorEqualizerItemStyle</item>
+        <item name="musicEditorEqualizerThrobberStyle">
+            @style/CustomMusicEditorEqualizerThrobberStyle
+        </item>
+
+
+        <item name="music_editor_surface_background">@color/black</item>
+        <item name="music_editor_voice_recording_background">@color/black</item>
+        <item name="music_editor_timeline_background">@color/big_stone</item>
+        <item name="music_editor_playback_controller_bg">@color/black</item>
+        <item name="music_editor_action_container_bg">@color/black</item>
+
+        <item name="music_editor_icon_tracks">@drawable/ic_timeline_tracks</item>
+        <item name="music_editor_icon_effects">@drawable/ic_timeline_effects</item>
+        <item name="music_editor_icon_track_recording">@drawable/ic_timeline_recording</item>
+        <item name="music_editor_icon_track_edit">@drawable/ic_timeline_edit</item>
+        <item name="music_editor_icon_track_effects">@drawable/ic_timeline_effects</item>
+        <item name="music_editor_icon_track_delete">@drawable/ic_timeline_trash</item>
+        <!---->
+
+        <!-- Timeline editor -->
+        <item name="timelineTextViewStyle">@style/CustomTimelineTextViewStyle</item>
+        <item name="object_editor_icon_text">@drawable/ic_add_text</item>
+        <item name="object_editor_icon_sticker">@drawable/ic_add_gif</item>
+        <item name="object_editor_icon_edit">@drawable/ic_timeline_edit</item>
+        <item name="object_editor_icon_delete">@drawable/ic_timeline_trash</item>
+        <!---->
+
+        <!--Stickers-->
+        <item name="stickersSearchViewStyle">@style/CustomStickersSearchStyle</item>
+        <item name="stickersRetryTitleTextStyle">@style/CustomStickersRetryTitleTextStyle</item>
+        <item name="stickersRetryMessageTextStyle">@style/CustomStickersRetryMessageTextStyle</item>
+        <item name="stickersRetryBtnStyle">@style/CustomStickersRetryBtnStyle</item>
+
+        <!--Extended cover-->
+        <item name="extendedCoverParentStyle">@style/CustomExtendedCoverParentStyle</item>
+        <item name="extendedCoverNextButtonStyle">@style/CustomExtendedCoverNextButtonStyle</item>
+        <item name="extendedCoverCancelButtonStyle">@style/CustomExtendedCoverCancelButtonStyle
+        </item>
+        <item name="extendedCoverTitleStyle">@style/CustomExtendedCoverTitleStyle</item>
+        <item name="extendedCoverDescriptionStyle">@style/CustomExtendedCoverDescriptionStyle</item>
+        <item name="extendedCoverThumbnailPickerStyle">
+            @style/CustomExtendedCoverThumbnailPickerStyle
+        </item>
+        <item name="extendedCoverExternalPhotoChooseStyle">
+            @style/CustomExtendedCoverExternalPhotoChooseStyle
+        </item>
+        <item name="extendedCoverPreviewParentStyle">@style/CustomExtendedCoverPreviewParentStyle
+        </item>
+        <item name="extendedCoverExternalPhotoStyle">@style/CustomExtendedCoverExternalPhotoStyle
+        </item>
+        <item name="extendedCoverExternalPhotoDeleteBackgroundStyle">
+            @style/CustomExtendedCoverExternalPhotoDeleteBackgroundStyle
+        </item>
+        <item name="extendedCoverExternalPhotoDeleteStyle">
+            @style/CustomExtendedCoverExternalPhotoDeleteStyle
+        </item>
+        <!---->
+
+        <item name="toastStyle">@style/CustomToastStyle</item>
+        <item name="wait_dialog_throbber_bg">@drawable/bg_wait_dialog_throbber</item>
+
+        <!-- Audio Browser -->
+        <item name="audioBrowserBottomSheetStyle">@style/CustomAudioBrowserBottomSheetStyle</item>
+        <item name="audioBrowserTrackNameStyle">@style/CustomAudioBrowserTrackNameStyle</item>
+        <item name="audioBrowserTrackDurationStyle">@style/CustomAudioBrowserTrackDurationStyle
+        </item>
+        <item name="audioBrowserTrackApplyBtnStyle">@style/CustomAudioBrowserTrackApplyBtnStyle
+        </item>
+        <item name="audioBrowserTrackErrorImageStyle">@style/CustomAudioBrowserTrackErrorImageStyle
+        </item>
+        <item name="audioBrowserTrackPlaybackBtnStyle">@style/CustomAudioBrowserPlaybackBtnStyle
+        </item>
+        <item name="audioBrowserTrackSeekBarStyle">@style/CustomAudioBrowserTrackSeekBarStyle</item>
+        <item name="audioBrowserTrackItemStyle">@style/CustomAudioBrowserTrackItemStyle</item>
+        <item name="audioBrowserTrackItemDividerDrawable">@drawable/bg_track_item_divider</item>
+        <item name="audioBrowserCategoryItemDividerDrawable">@null</item>
+        <item name="audioBrowserSubCategoryItemDividerDrawable">@drawable/bg_track_item_divider
+        </item>
+        <item name="audioBrowserCategoryItemStyle">@style/CustomAudioBrowserCategoryItemStyle</item>
+        <item name="audioBrowserCategoryImageStyle">@style/CustomAudioBrowserCategoryImageStyle
+        </item>
+        <item name="audioBrowserCategoryNameStyle">@style/CustomAudioBrowserCategoryNameStyle</item>
+        <item name="audioBrowserSubCategoryItemStyle">@style/CustomAudioBrowserSubCategoryItemStyle
+        </item>
+        <item name="audioBrowserSubCategoryImageStyle">
+            @style/CustomAudioBrowserSubCategoryImageStyle
+        </item>
+        <item name="audioBrowserSubCategoryNameStyle">@style/CustomAudioBrowserSubCategoryNameStyle
+        </item>
+        <item name="audioBrowserErrorViewStyle">@style/CustomAudioBrowserErrorViewStyle</item>
+        <item name="audioBrowserRecyclerViewStyle">@style/CustomAudioBrowserRecyclerViewStyle</item>
+        <item name="audioBrowserSearchViewStyle">@style/CustomAudioBrowserSearchViewStyle</item>
+        <item name="audioBrowserCloseViewStyle">@style/CustomAudioBrowserCloseViewStyle</item>
+        <item name="audioBrowserTitleViewStyle">@style/CustomAudioBrowserTitleViewStyle</item>
+        <item name="audioBrowserLibraryViewStyle">@style/CustomAudioBrowserLibraryViewStyle</item>
+        <item name="audioBrowserDownloadAnimationViewStyle">
+            @style/CustomAudioBrowserDownloadAnimationViewStyle
+        </item>
+        <item name="audioBrowserDownloadCancelViewStyle">
+            @style/CustomAudioBrowserDownloadCancelViewStyle
+        </item>
+        <item name="audioBrowserCameraTrackContainerStyle">
+            @style/CustomAudioBrowserCameraTrackContainerStyle
+        </item>
+        <item name="audioBrowserCameraTrackIconViewStyle">
+            @style/CustomAudioBrowserCameraTrackIconViewStyle
+        </item>
+        <item name="audioBrowserCameraTrackTitleViewStyle">
+            @style/CustomAudioBrowserCameraTrackTitleViewStyle
+        </item>
+        <item name="audioBrowserCameraTrackResetBtnStyle">
+            @style/CustomAudioBrowserCameraTrackResetBtnStyle
+        </item>
+        <item name="audioBrowserTrackLoadMoreStyle">
+            @style/CustomAudioBrowserTrackLoadMoreStyle
+        </item>
+        <item name="audioBrowserTrackLoadMoreItemStyle">
+            @style/CustomAudioBrowserTrackLoadMoreItemStyle
+        </item>
+        <item name="audioBrowserThrobberViewStyle">
+            @style/CustomAudioBrowserThrobberViewStyle
+        </item>
+
+        <!-- Info alerts -->
+        <item name="permissionsDialogContainerStyle">@style/CustomPermissionsDialogContainer</item>
+        <item name="permissionsDialogDescriptionStyle">@style/CustomPermissionsDialogDescription
+        </item>
+        <item name="permissionsDialogActionButtonStyle">@style/CustomPermissionsDialogActionButton
+        </item>
+        <!---->
+
+        <!--Hands free-->
+        <item name="handsFreeBottomSheetStyle">@style/CustomHandsFreeBottomSheetStyle</item>
+        <item name="handsFreeTimerLabelStyle">@style/CustomHandsFreeTimerLabelStyle</item>
+        <item name="handsFreeTimerPickerStyle">@style/CustomHandsFreeTimerPickerStyle</item>
+        <item name="handsFreeTimerItemStyle">@style/CustomHandsFreeTimerItemStyle</item>
+        <item name="handsFreeTimerDividerStyle">@style/CustomHandsFreeTimerDividerStyle</item>
+        <item name="handsFreeTimelineLabelStyle">@style/CustomHandsFreeTimelineLabelStyle</item>
+        <item name="handsFreeTimelineSwitchStyle">@style/CustomHandsFreeTimelineSwitchStyle</item>
+        <item name="handsFreeTimelineHintStyle">@style/CustomHandsFreeTimelineHintStyle</item>
+        <item name="handsFreeTimelineRangeDurationStyle">
+            @style/CustomHandsFreeTimelineRangeDurationStyle
+        </item>
+        <item name="handsFreeTimelineCurrentDurationStyle">
+            @style/CustomHandsFreeTimelineCurrentDurationStyle
+        </item>
+        <item name="handsFreeTimelineStyle">@style/CustomHandsFreeTimelineStyle</item>
+        <item name="handsFreeRecordButtonStyle">@style/CustomHandsFreeRecordButtonStyle</item>
+        <!---->
+
+        <!-- Background mask -->
+        <item name="backgroundEffectContainerStyle">@style/CustomBackgroundEffectContainerStyle
+        </item>
+        <item name="backgroundEffectHintStyle">@style/CustomBackgroundEffectHintStyle</item>
+        <item name="backgroundEffectEmptyViewStyle">@style/CustomBackgroundEffectEmptyViewStyle
+        </item>
+        <item name="backgroundEffectPermissionsBtnStyle">
+            @style/CustomBackgroundEffectPermissionsBtnStyle
+        </item>
+        <item name="backgroundEffectGalleryListStyle">
+            @style/CustomBackgroundEffectGalleryListStyle
+        </item>
+        <item name="backgroundEffectGalleryBtnStyle">@style/CustomBackgroundEffectGalleryBtnStyle
+        </item>
+        <item name="backgroundEffectGalleryThumbStyle">
+            @style/CustomBackgroundEffectGalleryThumbStyle
+        </item>
+        <item name="backgroundEffectGalleryThumbTextStyle">
+            @style/CustomBackgroundEffectGalleryThumbTextStyle
+        </item>
+        <item name="backgroundEffectGalleryThumbProgressStyle">
+            @style/CustomBackgroundEffectGalleryThumbProgressStyle
+        </item>
+        <item name="backgroundEffectGalleryBorderedImageViewStyle">
+            @style/CustomBackgroundEffectGalleryBorderedImageViewStyle
+        </item>
+        <!---->
+
+        <!-- Drafts -->
+        <item name="draftsParentStyle">@style/CustomDraftsParentStyle</item>
+        <item name="draftsBackButtonStyle">@style/CustomDraftsBackButtonStyle</item>
+        <item name="draftsTitleStyle">@style/CustomDraftsTitleStyle</item>
+        <item name="draftsRecyclerViewStyle">@style/CustomDraftsRecyclerViewStyle</item>
+        <item name="draftsEmptyTextStyle">@style/CustomDraftsEmptyTextStyle</item>
+        <item name="draftItemParentStyle">@style/CustomDraftItemParentStyle</item>
+        <item name="draftItemThumbnailStyle">@style/CustomDraftItemThumbnailStyle</item>
+        <item name="draftItemOptionsButtonStyle">@style/CustomDraftItemOptionsButtonStyle</item>
+        <item name="draftItemNameStyle">@style/CustomDraftItemNameStyle</item>
+        <item name="draftOptionsParentStyle">@style/CustomDraftOptionsParentStyle</item>
+        <item name="draftOptionsPreviewStyle">@style/CustomDraftOptionsPreviewStyle</item>
+        <item name="draftOptionsNameStyle">@style/CustomDraftOptionsNameStyle</item>
+        <item name="draftOptionsSubtitleStyle">@style/CustomDraftOptionsSubtitleStyle</item>
+        <item name="draftOptionsBackButtonStyle">@style/CustomDraftOptionsBackButtonStyle</item>
+        <item name="draftOptionsDividerStyle">@style/CustomDraftOptionsDividerStyle</item>
+        <item name="draftOptionsRemoveButtonStyle">@style/CustomDraftOptionsRemoveButtonStyle</item>
+        <!---->
+
+        <!-- Record button -->
+        <item name="recordButtonStyle">@style/CustomRecordButtonStyle</item>
+        <!---->
+    </style>
+
+</resources>

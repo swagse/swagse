@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/Theme.SwagSe.NoActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/logoXmarks"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logo" />
+
+                <!--   <EditText
+                       android:id="@+id/toolbar_editext"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_centerVertical="true"
+                       android:layout_marginVertical="10dp"
+                       android:layout_toLeftOf="@id/chat"
+                       android:layout_toRightOf="@id/logoXmarks"
+                       android:background="@drawable/search_bg_design"
+                       android:clickable="false"
+                       android:drawableRight="@drawable/ic_search_white_24dp"
+                       android:drawablePadding="10dp"
+                       android:focusable="false"
+                       android:focusableInTouchMode="false"
+                       android:hint="Search by Category/N............."
+                       android:paddingLeft="10dp"
+                       android:paddingRight="10dp"
+                       android:singleLine="true"
+                       android:textColorHint="@color/purple_700"
+                       android:textSize="12sp" />-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/go_liveText"
+                        android:text="@string/go_live"
+                        android:background="@drawable/button_style_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="16dp"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/search"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="16dp"
+                        app:srcCompat="@drawable/ic_search_white_24dp"
+                        android:tint="@color/purple_700"
+                        app:tint="@color/purple_700" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/chat"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="16dp"
+                        app:srcCompat="@drawable/ic_messenger"
+                        android:tint="@color/purple_700" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

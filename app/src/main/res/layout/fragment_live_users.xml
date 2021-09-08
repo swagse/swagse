@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LiveStreaming.Fragment.Live_Users_F">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="gone"
+       android:background="@drawable/livestream_back"
+       android:id="@+id/relative_layout_no_live_users"/>
+   <RelativeLayout
+       android:visibility="gone"
+       android:layout_width="match_parent"
+       android:id="@+id/relative_layout_live_users"
+       android:layout_height="match_parent">
+   
+      
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/recylerview"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/coloraccent"
+          android:gravity="center"
+          android:id="@+id/no_data_found"
+          android:layout_centerInParent="true"
+          android:text="No other user is live at that time.\n click of 'Go Live' for live video streaming."></TextView>
+      <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="15dp"
+          android:id="@+id/go_live_layout"
+          app:corner_radius="22dp"
+          android:background="@color/coloraccent">
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Go Live"
+             android:textSize="18dp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginLeft="25dp"
+             android:layout_marginRight="25dp"
+             />
+      </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+   </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,217 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.app.swagse"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/armeabi/libc++_shared.so'
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //Circular ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Butter Knife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    //Retrofit
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    //SMS Retriver API
+    implementation 'com.google.android.gms:play-services-base:17.1.0'
+    implementation 'com.google.android.gms:play-services-identity:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.1.0'
+
+    // Note: If you have migrated your code to AndroidX than add this for LocalBroadCastManager
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+    //Google Login
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    //OTP PinView
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+
+    //Image Croping Library
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    //Image Compreesor library
+    implementation 'com.iceteck.silicompressorr:silicompressor:1.1.0'
+
+    //Image
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.google.code.gson:gson:2.8.7'
+
+    /* //Exo Player
+     implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.16'
+     implementation 'com.google.android.exoplayer:exoplayer:2.12.3'
+     implementation "androidx.viewpager2:viewpager2:1.1.0-alpha01"
+     compile 'com.google.android.exoplayer:exoplayer-core:r2.4.0'
+     compile 'com.google.android.exoplayer:exoplayer-dash:r2.4.0'
+     compile 'com.google.android.exoplayer:exoplayer-hls:r2.4.0'
+     compile 'com.google.android.exoplayer:exoplayer-smoothstreaming:r2.4.0'
+     compile 'com.google.android.exoplayer:exoplayer-ui:r2.4.0'*/
+
+    // exo player
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.16'
+    implementation 'com.google.android.exoplayer:exoplayer:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:r2.4.0'
+
+    //Number Progress Bar
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+    //Download File Libaray
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+
+    // reactive
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    //Save Video in cache
+    implementation 'com.danikula:videocache:2.7.1'
+
+    //Video Editor
+    implementation 'com.github.wlanjie:trinity:0.2.9.1'
+    implementation 'com.writingminds:FFmpegAndroid:0.3.2'
+    implementation 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'
+//    implementation project(':library')
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    //Facebook Login
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+    //Sweet ALert
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+
+
+    implementation 'com.gmail.samehadar:iosdialog:1.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'net.the4thdimension:audio-wife:1.0.3'
+    implementation 'com.github.MasayukiSuda:GPUVideo-android:v0.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
+    implementation 'dev.dworks.libs:volleyplus:+'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+    //Do not Update this library their is a camera issue with new version
+    implementation 'com.wonderkiln:camerakit:0.13.0'
+
+    implementation 'com.chauthai.overscroll:overscroll-bouncy:0.1.1'
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.3.0'
+    implementation 'com.github.danylovolokh:hashtag-helper:1.1.0'
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.facebook.fresco:fresco:2.1.0'
+
+    implementation 'com.appyvet:materialrangebar:1.4.6'
+
+    implementation 'com.danikula:videocache:2.7.0'
+
+    implementation 'cat.ereza:customactivityoncrash:2.3.0'
+
+    implementation 'com.mani:ThinDownloadManager:1.4.0'
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.21'
+
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:27.0.0')
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Add the SDKs for any other Firebase products you want to use in your app
+    // For example, to use Firebase Authentication and Cloud Firestore
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.1'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.21'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.3'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-messaging:20.2.1'
+
+    implementation 'com.jcminarro:RoundKornerLayouts:0.4.0'
+    //agora
+    implementation 'io.agora.rtc:full-sdk:3.0.0'
+    //giphy
+    implementation('com.giphy.sdk:core:1.0.2@aar') {
+        transitive = true
+    }
+    implementation 'com.razorpay:checkout:1.6.6'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Banuba Video Editor SDK dependencies
+    def banubaSdkVersion = '1.0.18'
+    implementation "com.banuba.sdk:camera-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:camera-ui-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:core-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:core-ui-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ve-flow-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ve-timeline-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ve-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ve-ui-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ve-gallery-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ve-effects-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:effect-player-adapter:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ar-cloud:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:ve-audio-browser-sdk:${banubaSdkVersion}"
+    implementation "com.banuba.sdk:banuba-token-storage-sdk:${banubaSdkVersion}"
+
+}

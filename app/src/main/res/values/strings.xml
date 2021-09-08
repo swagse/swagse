@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Swag Se</string>
+    <string name="create_account_policy">By creating your account, you agree to our <Html><font color="#000000"><u><a href="http://103.140.219.76:2025/apoio/privacy-policy.html"><b>Privacy Policy</b></a></u></font></Html> &amp; <Html><font color="#000000"><u><a href="http://103.140.219.76:2025/apoio/terms-and-conditions.html"><b>Terms of Service</b></a></u></font></Html>.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Discover</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_me">Me</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="crop_image_menu_crop">Save</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="noti_channel_default">notification_channel_default</string>
+
+    <string name="facebook_app_id">909878923098440</string>
+    <string name="fb_login_protocol_scheme">fb909878923098440</string>
+    <string name="not_available">Not Available</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="go_live">Go Live</string>
+
+
+    <string name="agora_app_id">d1f2618f8e664c439e2415232b242737</string>
+
+    <!--<string name="agora_access_token">Place your agora access token</string>-->
+    <string name="agora_access_token"></string>
+    <string name="legal_channel_name_characters" translatable="false">&#xA0;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&amp;()+,-:;&lt;=.>?@[]^_`{|}~</string>
+    <string name="start_broadcast_title">Start Live Broadcast</string>
+    <string name="topic_edit_hint">Pick a topic to chat</string>
+    <string name="need_necessary_permissions">Necessary permissions acquired</string>
+
+    <string name="setting_title">Settings</string>
+    <string name="setting_resolution_title">Resolution</string>
+    <string name="setting_stats_title">Show video statistics</string>
+    <string name="setting_mirror_local_title">Local video preview mirror mode</string>
+    <string name="setting_mirror_remote_title">Remote video render mirror mode</string>
+    <string name="setting_mirror_encode_title">Local video encode mirror mode</string>
+
+</resources>

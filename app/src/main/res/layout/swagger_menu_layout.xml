@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bg_top_corner"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reportVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Report"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/copy_video_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Copy URL"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nosub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:context=".activity.Subscription">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/credentials_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="1dp"
+            android:outlineAmbientShadowColor="@color/purple_700"
+            android:outlineSpotShadowColor="@color/purple_700"
+            app:cardUseCompatPadding="true"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imabesdkd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/logo" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/packageName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/STARTER"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:padding="10dp"
+                                android:text=" Free To Start"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#C8C0C0">
+
+                            </View>
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Features"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/packagePlan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Your Own One Page Website"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/videolenth1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Your Own One Page Website"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/videosize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Google Friendly URL"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/packagePrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:padding="5dp"
+                            android:text="Live Classes Tools (1 Year)"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"></androidx.appcompat.widget.AppCompatTextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- <Button
+                     android:id="@+id/Paymen_for_payemt"
+                     style="@style/Next"
+                     android:layout_width="wrap_content"
+                     android:layout_height="116dp"
+                     android:layout_gravity="center"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginTop="60dp"
+                     android:layout_marginBottom="@dimen/_10dp"
+                     android:background="@drawable/button_round_single_color"
+                     android:paddingLeft="20dp"
+                     android:paddingRight="20dp"
+                     android:layout_toRightOf="@+id/corner"
+                     android:text="Payments"
+                     android:textAllCaps="false" />-->
+
+                <RelativeLayout
+                    android:id="@+id/startLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/STARTER"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button_design"
+                        android:padding="5dp"
+                        android:paddingTop="5dp"
+                        android:text="SwagSe"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/packageDetails"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="subscribe Now"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/credentials_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/credentials_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:src="@drawable/bg_plan_shape" />
+
+            <androidx.appcompat.widget.AppCompatandroidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/packagePlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatandroidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/packageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Subscription Text"
+            android:textColor="@color/black" />
+
+
+        <androidx.appcompat.widget.AppCompatandroidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/packagePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            android:text="1500"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatandroidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/packageDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/packageDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_design"
+            android:paddingHorizontal="16dp"
+            android:text="Subscribe Now"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>-->
+</RelativeLayout>

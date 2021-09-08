@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/layout/activity_chat.xml" value="0.26510416666666664" />
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/layout/activity_chat2.xml" value="0.151268115942029" />
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/layout/activity_search.xml" value="0.26510416666666664" />
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/layout/activity_sign_up.xml" value="0.26510416666666664" />
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/layout/activity_verify_o_t_p.xml" value="0.15806159420289856" />
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/layout/fragment_inbox.xml" value="0.2" />
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/layout/item_videos_container.xml" value="0.21422101449275363" />
+        <entry key="..\:/2021MillionCenters/SwagSe/app/src/main/res/menu/swagtube_menu.xml" value="0.26510416666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

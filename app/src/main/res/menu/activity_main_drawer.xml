@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:iconTint="@color/gray_color"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@drawable/subscription"
+            android:iconTint="@color/gray_color"
+            android:title="Subscription" />
+
+
+        <item
+            android:id="@+id/nav_package"
+            android:icon="@drawable/gift_box"
+            android:iconTint="@color/gray_color"
+            android:title="Packages" />
+
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:iconTint="@color/gray_color"
+            android:title="Profile" />
+    </group>
+
+    <group
+        android:id="@+id/menu_top1"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_reportHistory"
+            android:icon="@drawable/history"
+            android:iconTint="@color/gray_color"
+            android:title="Report History" />
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:iconTint="@color/gray_color"
+            android:title="History" />
+
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/youtube"
+            android:iconTint="@color/gray_color"
+            android:title="Your Videos" />
+
+        <item
+            android:id="@+id/nav_later"
+            android:actionLayout="@layout/badge_background"
+            android:icon="@drawable/history"
+            android:iconTint="@color/gray_color"
+            android:title="Watch later" />
+
+        <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/like"
+            android:iconTint="@color/gray_color"
+            android:title="Like Videos" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_top2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:iconTint="@color/gray_color"
+            android:title="Setting" />
+
+        <!--
+                <item
+                    android:id="@+id/nav_reportHistory"
+                    android:icon="@drawable/history"
+                    android:iconTint="@color/gray_color"
+                    android:title="Report History" />
+        -->
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:iconTint="@color/gray_color"
+            android:title="Help Feedback" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/writing"
+            android:iconTint="@color/gray_color"
+            android:title="Send Feedback" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_24"
+            android:iconTint="@color/gray_color"
+            android:title="Logout" />
+
+    </group>
+
+</menu>
