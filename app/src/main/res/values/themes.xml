@@ -112,12 +112,13 @@
     <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
     </style>
 
-    <!-- To customize video editor according to your app style you should
+<!--
+    &lt;!&ndash; To customize video editor according to your app style you should
      create your own theme inherited from VideoCreationTheme and apply it
-     to VideoCreationActivity in AndroidManifest.xml file -->
+     to VideoCreationActivity in AndroidManifest.xml file &ndash;&gt;
     <style name="CustomIntegrationAppTheme" parent="VideoCreationTheme">
 
-        <!-- Camera screen styles -->
+        &lt;!&ndash; Camera screen styles &ndash;&gt;
         <item name="cameraOverlayStyle">@style/CustomCameraOverlayStyle</item>
         <item name="cameraActionButtonStyle">@style/CustomCameraActionButtonStyle</item>
         <item name="cameraMusicTopIconStyle">@style/CustomCameraMusicTopIconStyle</item>
@@ -135,15 +136,15 @@
         <item name="actionableEffectTitleStyle">@style/CustomActionableEffectTitleStyle</item>
         <item name="checkableEffectTitleStyle">@style/CustomCheckableEffectTitleStyle</item>
 
-        <!-- Wait dialog style -->
+        &lt;!&ndash; Wait dialog style &ndash;&gt;
         <item name="throbberViewStyle">@style/CustomThrobberViewStyle</item>
         <item name="waitDialogTextStyle">@style/CustomWaitDialogTextStyle</item>
 
-        <!-- Following attributes define custom alert dialog icons
+        &lt;!&ndash; Following attributes define custom alert dialog icons
              that may be placed here if you want to apply images
              to alert dialogs shown in the video editor
              ("@null" means that there are no icons on alert dialogs -> it is default setup,
-             so if you do not want to add icons just not override these attributes) -->
+             so if you do not want to add icons just not override these attributes) &ndash;&gt;
         <item name="alert_camera_delete_video">@null</item>
         <item name="alert_camera_save">@null</item>
         <item name="alert_camera_reset_all">@null</item>
@@ -155,7 +156,7 @@
         <item name="alert_draft_restore_icon_res">@null</item>
         <item name="alert_draft_save_icon_res">@null</item>
 
-        <!--Picture in picture style-->
+        &lt;!&ndash;Picture in picture style&ndash;&gt;
         <item name="pipParentStyle">@style/CustomPipParentStyle</item>
         <item name="pipTitleStyle">@style/CustomPipTitleStyle</item>
         <item name="pipActionRecyclerStyle">@style/CustomPipActionRecyclerStyle</item>
@@ -165,7 +166,7 @@
         <item name="pipLayoutItemImageStyle">@style/CustomPipLayoutItemImageStyle</item>
         <item name="pipLayoutItemTextStyle">@style/CustomPipLayoutItemTextStyle</item>
 
-        <!--Editor-->
+        &lt;!&ndash;Editor&ndash;&gt;
         <item name="editorOverlayStyle">@style/CustomEditorOverlayStyle</item>
         <item name="editorActionsStyle">@style/CustomEditorActionsStyle</item>
         <item name="editorActionButtonStyle">@style/CustomEditorActionButtonStyle</item>
@@ -205,7 +206,7 @@
         </item>
         <item name="editorTextColorItemBackground">@drawable/bg_checkable_color</item>
 
-        <!--Gallery-->
+        &lt;!&ndash;Gallery&ndash;&gt;
         <item name="galleryImageViewStyle">@style/CustomGalleryImageViewStyle</item>
         <item name="galleryTitleTextStyle">@style/CustomGalleryTitleTextStyle</item>
         <item name="galleryBackButtonStyle">@style/CustomGalleryBackButtonStyle</item>
@@ -228,10 +229,10 @@
         <item name="gallery_item_corner_radius">4dp</item>
         <item name="gallery_item_margin">2dp</item>
         <item name="gallery_album_divider_color">@color/catskill_white</item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
 
-        <!--Video Trimmer-->
+        &lt;!&ndash;Video Trimmer&ndash;&gt;
         <item name="trimmerStyle">@style/CustomTrimmerViewStyle</item>
         <item name="trimmerBackButtonStyle">@style/CustomTrimmerBackButtonStyle</item>
         <item name="trimmerNextButtonStyle">@style/CustomTrimmerNextButtonStyle</item>
@@ -255,9 +256,9 @@
         <item name="trimmer_icon_add_video">@drawable/ic_trimmer_add_video</item>
         <item name="trimmer_bg_color_add_video">@color/transparent</item>
         <item name="trimmer_time_visible">true</item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!--Music Editor-->
+        &lt;!&ndash;Music Editor&ndash;&gt;
         <item name="musicEditorPlaybackControllerParentStyle">
             @style/CustomMusicEditorPlaybackControllerParentStyle
         </item>
@@ -334,23 +335,23 @@
         <item name="music_editor_icon_track_edit">@drawable/ic_timeline_edit</item>
         <item name="music_editor_icon_track_effects">@drawable/ic_timeline_effects</item>
         <item name="music_editor_icon_track_delete">@drawable/ic_timeline_trash</item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Timeline editor -->
+        &lt;!&ndash; Timeline editor &ndash;&gt;
         <item name="timelineTextViewStyle">@style/CustomTimelineTextViewStyle</item>
         <item name="object_editor_icon_text">@drawable/ic_add_text</item>
         <item name="object_editor_icon_sticker">@drawable/ic_add_gif</item>
         <item name="object_editor_icon_edit">@drawable/ic_timeline_edit</item>
         <item name="object_editor_icon_delete">@drawable/ic_timeline_trash</item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!--Stickers-->
+        &lt;!&ndash;Stickers&ndash;&gt;
         <item name="stickersSearchViewStyle">@style/CustomStickersSearchStyle</item>
         <item name="stickersRetryTitleTextStyle">@style/CustomStickersRetryTitleTextStyle</item>
         <item name="stickersRetryMessageTextStyle">@style/CustomStickersRetryMessageTextStyle</item>
         <item name="stickersRetryBtnStyle">@style/CustomStickersRetryBtnStyle</item>
 
-        <!--Extended cover-->
+        &lt;!&ndash;Extended cover&ndash;&gt;
         <item name="extendedCoverParentStyle">@style/CustomExtendedCoverParentStyle</item>
         <item name="extendedCoverNextButtonStyle">@style/CustomExtendedCoverNextButtonStyle</item>
         <item name="extendedCoverCancelButtonStyle">@style/CustomExtendedCoverCancelButtonStyle
@@ -373,12 +374,12 @@
         <item name="extendedCoverExternalPhotoDeleteStyle">
             @style/CustomExtendedCoverExternalPhotoDeleteStyle
         </item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
         <item name="toastStyle">@style/CustomToastStyle</item>
         <item name="wait_dialog_throbber_bg">@drawable/bg_wait_dialog_throbber</item>
 
-        <!-- Audio Browser -->
+        &lt;!&ndash; Audio Browser &ndash;&gt;
         <item name="audioBrowserBottomSheetStyle">@style/CustomAudioBrowserBottomSheetStyle</item>
         <item name="audioBrowserTrackNameStyle">@style/CustomAudioBrowserTrackNameStyle</item>
         <item name="audioBrowserTrackDurationStyle">@style/CustomAudioBrowserTrackDurationStyle
@@ -440,15 +441,15 @@
             @style/CustomAudioBrowserThrobberViewStyle
         </item>
 
-        <!-- Info alerts -->
+        &lt;!&ndash; Info alerts &ndash;&gt;
         <item name="permissionsDialogContainerStyle">@style/CustomPermissionsDialogContainer</item>
         <item name="permissionsDialogDescriptionStyle">@style/CustomPermissionsDialogDescription
         </item>
         <item name="permissionsDialogActionButtonStyle">@style/CustomPermissionsDialogActionButton
         </item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!--Hands free-->
+        &lt;!&ndash;Hands free&ndash;&gt;
         <item name="handsFreeBottomSheetStyle">@style/CustomHandsFreeBottomSheetStyle</item>
         <item name="handsFreeTimerLabelStyle">@style/CustomHandsFreeTimerLabelStyle</item>
         <item name="handsFreeTimerPickerStyle">@style/CustomHandsFreeTimerPickerStyle</item>
@@ -465,9 +466,9 @@
         </item>
         <item name="handsFreeTimelineStyle">@style/CustomHandsFreeTimelineStyle</item>
         <item name="handsFreeRecordButtonStyle">@style/CustomHandsFreeRecordButtonStyle</item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Background mask -->
+        &lt;!&ndash; Background mask &ndash;&gt;
         <item name="backgroundEffectContainerStyle">@style/CustomBackgroundEffectContainerStyle
         </item>
         <item name="backgroundEffectHintStyle">@style/CustomBackgroundEffectHintStyle</item>
@@ -493,9 +494,9 @@
         <item name="backgroundEffectGalleryBorderedImageViewStyle">
             @style/CustomBackgroundEffectGalleryBorderedImageViewStyle
         </item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Drafts -->
+        &lt;!&ndash; Drafts &ndash;&gt;
         <item name="draftsParentStyle">@style/CustomDraftsParentStyle</item>
         <item name="draftsBackButtonStyle">@style/CustomDraftsBackButtonStyle</item>
         <item name="draftsTitleStyle">@style/CustomDraftsTitleStyle</item>
@@ -512,11 +513,12 @@
         <item name="draftOptionsBackButtonStyle">@style/CustomDraftOptionsBackButtonStyle</item>
         <item name="draftOptionsDividerStyle">@style/CustomDraftOptionsDividerStyle</item>
         <item name="draftOptionsRemoveButtonStyle">@style/CustomDraftOptionsRemoveButtonStyle</item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
 
-        <!-- Record button -->
+        &lt;!&ndash; Record button &ndash;&gt;
         <item name="recordButtonStyle">@style/CustomRecordButtonStyle</item>
-        <!---->
+        &lt;!&ndash;&ndash;&gt;
     </style>
+-->
 
 </resources>
